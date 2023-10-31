@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primario: #2C3639;
+    --secundario: #A27B5C;
+    --terciario: #DCD7C9;
+    --hover: #3F4E4F; 
+
+    --font-primaria: 'Playpen Sans', cursive;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: var(--font-primaria);
+    background-color: var(--hover);
+}
+
+.cabecario {
+    padding: 1% 20% 1% 6%;
+    background-color: var(--primario);
+}
+
+.cabecario__logo {
+    width: 80px;
+}
+
+.cabecario__menu {
+    display: flex;
+    justify-content:flex-start;
+    gap: 24%;
+    align-items: center;
+    
+}
+
+.cabecario__titulo {
+    color: var(--secundario);
+}
+
+.cabecario__navegacao {
+    display: flex;
+    gap: 15%;
+}
+
+.cabecario__navegacao__link {
+    text-decoration: none;
+    color: var(--secundario);
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.conteudo {
+    margin: 2% 0;
+    height: 100vh;
+}
+
+.livros__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 2%;
+}
+
+.livros__container__imagem {
+    width: 150px;
+}
+
+.livros__container__imagem:hover {
+    box-shadow: 0 0 8px 1px rgba(0, 140, 186, 1.8);
+}
+
+/* PAG LIVRO */
+.livro__container {
+    display: flex;
+    margin: 3% 23% 2% 15%;
+    gap: 33px;
+}
+
+.livro {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+}
+
+.livro__titulo {
+    color: var(--secundario);
+    font-size: 33px;
+}
+
+.livro__texto {
+    color: var(--terciario);
+    font-size: 25px;
+}
+
+.livro__imagem {
+    width: 260px;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3% 15% 5% 15%;
+}
+
+.sobre__titulo{ 
+    color: var(--secundario);
+    font-size: 33px;
+    margin-bottom: 1%;
+}
+
+.sobre__conteudo {
+    display: flex;
+    gap: 20%;
+    align-items: center;
+}
+
+.sobre__conteudo__imagem {
+    margin-top: 3%;
+    width: 520px;
+}
+
+.sobre__conteudo__lista {
+    text-align: start;
+    line-height: 2;
+    color: var(--terciario);
+    font-size: 26px;
+}
+
+.rodape {
+    background-color: var(--primario);
+    padding: 1%;
+    text-align: center;
+    color: var(--terciario);
+}
